@@ -1,0 +1,110 @@
+@import "reset";
+@import "colori";
+@import "font";
+@import "spaziature";
+@import "bottoni";
+@import "mixins";
+@import "animazioni";
+
+body
+{
+     @extend .body-font;
+     width: 100%;
+     background-image: url(https://images6.alphacoders.com/109/thumb-1920-1091044.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+h2
+{
+     font-size: 40px;
+     font-weight: bold;
+     margin: 10px 0px;
+}
+
+h3
+{
+     font-size: 35px;
+     font-weight: bold;
+     margin: 10px 10px;
+}
+
+p
+{
+     margin:0.1px
+}
+
+nav
+{
+     background-color: $navbar-background-color;
+     color: $navbar-font-color;
+     padding: 5px;   
+     font-weight: bold;
+
+     img
+     {
+          width: 50px;
+          cursor: pointer;
+     }
+
+     ul
+     {
+          display: flex;
+          justify-content:left;
+          align-items: center; 
+
+          li{
+               cursor: pointer;
+               margin-left: 15px;
+               text-decoration: none;
+               display: inline;
+          }
+     }
+}
+
+#content{
+     margin:2%
+}
+
+.main-section
+{
+     color: white;
+     background-color: $navbar-background-color;
+}
+
+.headline
+{
+     @extend .main-section;
+     padding: 25px;
+
+}
+
+#our-agents
+{
+     @extend .main-section;
+     margin: 10px 0px;
+     padding: 5px;
+
+     #agents{
+          display: flex;
+          align-items:baseline;
+          justify-content: space-evenly;
+     }
+
+     #agents-p{
+          text-align: left;
+          padding: 15px;
+          font-style: italic;
+     }
+     
+     img
+     {
+          margin: 15px 0px;
+     }
+
+     p
+     {
+          text-align: center;
+
+     }
+}

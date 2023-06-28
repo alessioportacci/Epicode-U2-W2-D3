@@ -1,0 +1,21 @@
+.btn
+{
+    padding: 5px;
+    margin:10px;
+}
+
+.btn-blue
+{
+    @extend .btn;
+    background-color: #0e6eff;
+}
+.btn-orange
+{
+    @extend .btn;
+    background-color: #ff8700;
+}
+.btn-green
+{
+    @extend .btn;
+    background-color: #4caf50;
+}
